@@ -1,5 +1,5 @@
 # ArticleApp - REST APIs for creating articles, adding comments to them and liking comments  
-# ToDo - Front-End, liking articles and few other misc items  
+#### ToDo - Front-End, liking articles and few other misc items  
  
 This app is developed using Spring Boot, HSQLDB(In-Memory Database), JPA and Hibernate, Oauth2
 
