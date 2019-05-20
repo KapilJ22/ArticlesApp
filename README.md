@@ -1,4 +1,6 @@
-# ArticleApp - REST APIs for creating Articles 
+# ArticleApp - REST APIs for creating Articles, adding comments to them and liking comments  
+# ToDo - Front-End, liking articles and few other misc items  
+ 
 This app is developed using Spring Boot, HSQLDB(In-Memory Database), JPA and Hibernate, Oauth2
 
 • Users interact with Article services to create new Articles.   
