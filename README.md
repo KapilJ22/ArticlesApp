@@ -1,13 +1,7 @@
 # ArticleApp - REST APIs for creating articles, adding comments to them and liking comments  
-#### (ToDo - Front-End, liking articles and few other misc items.)  
+#### ( ToDo - Front-End, liking articles and few other misc items. )  
  
 This app is developed using Spring Boot, HSQLDB(In-Memory Database), JPA and Hibernate, Oauth2
-
-• Users interact with Article services to create new Articles.   
-• Each Article contains a set of Comments that are provided during Article creation.  
-• Voting is restricted on a single Comment.  
-• Participants can cast any number of Likes.  
-
 
 # Steps to Setup
 1. Clone the application - git clone https://github.com/drone-cloud/ArticleApp.git
