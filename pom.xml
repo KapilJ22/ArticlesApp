@@ -18,7 +18,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<start-class>com.app.QuickArticleApplication</start-class>
+		<java.version>1.8</java.version>
+	</properties>
 
 	<dependencies>
 		<dependency>
