@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'mgmuhilan/dind-maven3-jdk8'
+            image 'aiwin/maven3-base'
             args '-v /root/.m2:/root/.m2'
         }
     }
