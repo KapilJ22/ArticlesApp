@@ -9,6 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
+                stash includes: 'target/*.jar', name: 'targetfiles'
             }
         }
         stage('Test') {
@@ -23,6 +24,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
+             unstash 'targetfiles'
                 sh './jenkins/scripts/deliver.sh'
             }
         }
