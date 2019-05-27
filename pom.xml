@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.app</groupId>
-	<artifactId>Article-App</artifactId>
+	<artifactId>articleapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Article-App</name>
+	<name>articleapp</name>
 	<description>Quick Article application built using Spring Boot</description>
 
 	<parent>
