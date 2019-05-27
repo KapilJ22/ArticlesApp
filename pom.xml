@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>com.app.QuickArticleApplication</start-class>
 		<java.version>1.8</java.version>
+  	 <docker.image.prefix>${env.USER}</docker.image.prefix>
 	</properties>
 
 	<dependencies>
@@ -143,22 +144,17 @@
         </execution>
     </executions>
 </plugin>
+<plugin>
+		<groupId>com.spotify</groupId>
+		<artifactId>dockerfile-maven-plugin</artifactId>
+		<version>1.4.9</version>
+		<configuration>
+				<repository>${docker.image.prefix}/${project.artifactId}</repository>
+		</configuration>
+</plugin>
 		</plugins>
 	</build>
 
-	<properties>
-	   <docker.image.prefix>${env.USER}</docker.image.prefix>
-	</properties>
-	<build>
-	    <plugins>
-	        <plugin>
-	            <groupId>com.spotify</groupId>
-	            <artifactId>dockerfile-maven-plugin</artifactId>
-	            <version>1.4.9</version>
-	            <configuration>
-	                <repository>${docker.image.prefix}/${project.artifactId}</repository>
-	            </configuration>
-	        </plugin>
-	    </plugins>
-	</build>
+
+
 </project>
