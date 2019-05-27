@@ -147,7 +147,7 @@
 	</build>
 
 	<properties>
-	   <docker.image.prefix>springio</docker.image.prefix>
+	   <docker.image.prefix>${env.USER}</docker.image.prefix>
 	</properties>
 	<build>
 	    <plugins>
