@@ -1,3 +1,18 @@
+// A simple pipeline 
+
+node {
+    
+    stage 'Clone the project'
+         git 'https://github.com/drone-cloud/ArticlesApp'
+    stage 'Compile and Build '
+        sh 'mvn -B -DskipTests clean package'
+    stage 'Build Docker Image'
+        sh 'docker build -t myorg/myapp .'
+    stage 'Run the app on 8089 host port'
+        sh 'docker run -p 8089:8080 myorg/myapp'
+}
+
+/* In progress complete CI/ CD with Kubernetes deploymen
 node{
 
   //Define all variables
@@ -60,3 +75,4 @@ node{
   }
 
 }
+*/
