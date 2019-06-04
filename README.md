@@ -1,7 +1,9 @@
 # ArticleApp - REST APIs for creating articles, adding comments to them and liking comments  
 #### ( ToDo - Front-End, liking articles and few other misc items. )  
  
-This app is developed using Spring Boot, HSQLDB(In-Memory Database), JPA and Hibernate, Oauth2
+This app is developed using Spring Boot, HSQLDB(In-Memory Database), JPA and Hibernate, Oauth2.
+
+CI/ CD is implemented with Jenkins and Maven. Docker is used to containerize image and run as container.
 
 # Steps to Setup
 1. Clone the application - git clone https://github.com/drone-cloud/ArticleApp.git
